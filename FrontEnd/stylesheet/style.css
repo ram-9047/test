@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap");
+
+body {
+  font-family: "Comfortaa", cursive;
+  min-height: 100vh;
+  background: rgb(54, 133, 252);
+  background: linear-gradient(
+    40deg,
+    rgba(54, 133, 252, 1) 11%,
+    rgba(118, 54, 252, 1) 57%
+  );
+}
+
+.header {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  font-size: 1.2rem;
+}
+.header a {
+  text-decoration: none;
+  color: white;
+}
+.header h2 {
+  color: white;
+}
+.form {
+  font-size: 1.7rem;
+  margin-top: 7rem;
+  color: white;
+  margin-left: 5rem;
+}
+.search-title h2 {
+  padding: 1rem 0;
+}
+
+.searchItem {
+  border: 1px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  padding: 0.6rem 0;
+  padding-left: 0.8rem;
+}
+
+.searchItem:focus {
+  border-bottom: 3px solid salmon;
+}
+
+.edit-form button,
+.search-box button {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.edit-form button:hover,
+.search-box button:hover {
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+}
+
+.search-records-box {
+  display: none;
+}
+
+.search-records-box-item-name,
+.search-records-box-item-major,
+.search-records-box-item-address {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.search-records-box-item-name h3,
+.search-records-box-item-major h3,
+.search-records-box-item-address h3 {
+  margin-right: 0.5rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+  color: white;
+}
+table {
+  width: 70rem;
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+
+th {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+}
+
+td {
+  text-align: center;
+  padding: 0.9rem 0;
+  font-size: 1.2rem;
+}
+.pdfBtn {
+  margin-top: 2rem;
+  margin-left: 35rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.9rem;
+}
+.edit-box {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.edit-form h3 {
+  margin: 1rem 0;
+}
