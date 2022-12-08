@@ -24,26 +24,26 @@ exports.searchRecords = (req, res, next) => {
   res.status(200).json({ success: true, result });
 };
 
-// exports.createPDF = async (req, res, next) => {
-//   let data = req.body;
-//   console.log(data);
-//   const doc = new PDFDocument();
+exports.createPDF = async (req, res, next) => {
+  let data = req.body;
+  console.log(data);
+  const doc = new PDFDocument();
 
-//   let title = Math.floor(Math.random() * 100);
+  let title = Math.floor(Math.random() * 100);
 
-//   doc.pipe(fs.createWriteStream(`${title}output.pdf`));
+  doc.pipe(fs.createWriteStream(`${title}output.pdf`));
 
-//   data.forEach((item) => {
-//     doc
-//       .fontSize(15)
-//       .text(
-//         `Name: ${item.Name}, Major: ${item.Major},Address: ${item.address.address_1} ${item.address.address_2}, ${item.address.city}, ${item.address.state}, ${item.address.zip}`
-//       );
-//   });
+  data.forEach((item) => {
+    doc
+      .fontSize(15)
+      .text(
+        `Name: ${item.Name}, Major: ${item.Major},Address: ${item.address.address_1} ${item.address.address_2}, ${item.address.city}, ${item.address.state}, ${item.address.zip}`
+      );
+  });
 
-//   doc.end();
-//   res.status(200).json({ success: true, id: `${title}output.pdf` });
-// };
+  doc.end();
+  res.status(200).json({ success: true, id: `${title}output.pdf` });
+};
 
 // exports.editPDF = (req, res, next) => {
 //   let name = req.query.name;
